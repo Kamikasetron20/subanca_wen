@@ -292,7 +292,7 @@ section { padding: 80px 5%; }
     0 4px 12px rgba(0,0,0,0.06);
 }
 .prop-img {
-  height: 240px;
+  height: 290px;
 
   background-size: cover;
   background-position: center;
@@ -303,92 +303,132 @@ section { padding: 80px 5%; }
 
   transition: transform 0.5s ease;
 }
+
 .prop-card:hover .prop-img {
   transform: scale(1.04);
 }
+
 .prop-img::after {
-  content: '';
 
-  position: absolute;
-  inset: 0;
+content: '';
 
-  background:
-    linear-gradient(
-      to top,
-      rgba(0,0,0,0.38),
-      rgba(0,0,0,0.05),
-      rgba(0,0,0,0.02)
-    );
+position: absolute;
+inset: 0;
+
+background:
+
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.58) 0%,
+    rgba(0,0,0,0.18) 40%,
+    rgba(0,0,0,0.02) 100%
+  );
+
 }
+
 .prop-img-placeholder {
   width: 100%; height: 210px;
   display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;
   color: rgba(255,255,255,0.7); font-size: 13px;
 }
+
 .prop-badge {
-  position: absolute;
-  top: 16px;
-  left: 16px;
 
-  background: rgba(255,255,255,0.92);
+position: absolute;
 
-  color: var(--navy);
+top: 18px;
+left: 18px;
 
-  padding: 7px 14px;
+background:
+  rgba(255,255,255,0.16);
 
-  border-radius: 999px;
+color: white;
 
-  font-size: 11px;
-  font-weight: 700;
+padding:
+  9px 16px;
 
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
+border-radius: 999px;
 
-  backdrop-filter: blur(10px);
-  z-index: 2;
+font-size: 10px;
+font-weight: 700;
+
+letter-spacing: 1.3px;
+text-transform: uppercase;
+
+backdrop-filter: blur(14px);
+
+border:
+  1px solid rgba(255,255,255,0.18);
+
+z-index: 2;
 }
+
 .badge-arriendo { background: var(--navy); color: var(--gold); }
 .badge-venta { background: var(--gold); color: var(--navy); }
 .badge-nuevo { background: var(--success); color: white; }
+
 .prop-fav {
-  position: absolute;
-  top: 16px;
-  right: 16px;
 
-  width: 38px;
-  height: 38px;
+position: absolute;
 
-  border-radius: 50%;
+top: 18px;
+right: 18px;
 
-  background: rgba(255,255,255,0.92);
+width: 42px;
+height: 42px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+border-radius: 50%;
 
-  backdrop-filter: blur(10px);
+background:
+  rgba(255,255,255,0.14);
 
-  font-size: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
 
-  z-index: 2;
+backdrop-filter: blur(14px);
 
-  transition: all 0.25s ease;
+color: white;
+
+font-size: 16px;
+
+z-index: 2;
+
+border:
+  1px solid rgba(255,255,255,0.18);
+
+transition: all 0.25s ease;
 }
+
 .prop-fav:hover {
   transform: scale(1.08);
   background: white;
 }
-.prop-body { padding: 24px; }
-.prop-price {
-  font-size: 30px;
-  font-weight: 800;
 
-  color: var(--navy);
+.prop-body {
 
-  margin-bottom: 10px;
+padding:
+  26px 24px 24px;
 
-  letter-spacing: -1px;
 }
+
+.prop-price {
+
+font-family:
+  'Playfair Display', serif;
+
+font-size: 34px;
+
+font-weight: 700;
+
+color: var(--navy);
+
+margin-bottom: 12px;
+
+letter-spacing: -1px;
+
+}
+
 .prop-price span { font-size: 13px; font-weight: 400; color: var(--text-muted); font-family: 'DM Sans', sans-serif; }
 .prop-name {
   font-size: 20px;
@@ -400,9 +440,54 @@ section { padding: 80px 5%; }
 
   line-height: 1.3;
 }
-.prop-loc { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; display: flex; align-items: center; gap: 4px; }
-.prop-details { display: flex; gap: 16px; padding-top: 14px; border-top: 1px solid var(--cream-dark); }
-.prop-detail { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 5px; }
+
+.prop-loc {
+
+font-size: 14px;
+
+color: var(--text-muted);
+
+margin-bottom: 18px;
+
+display: flex;
+align-items: center;
+gap: 6px;
+
+}
+
+.prop-details {
+
+display: flex;
+
+gap: 10px;
+
+padding-top: 18px;
+
+border-top:
+  1px solid rgba(0,0,0,0.06);
+
+flex-wrap: wrap;
+
+}
+.prop-detail {
+
+font-size: 13px;
+
+color: var(--navy);
+
+display: flex;
+align-items: center;
+gap: 6px;
+
+background:
+  rgba(15,23,42,0.04);
+
+padding:
+  8px 12px;
+
+border-radius: 999px;
+
+}
 .prop-detail strong { color: var(--text); font-weight: 600; }
 .view-more-btn {
   display: block; margin: 44px auto 0; padding: 14px 40px; border: 2px solid var(--navy);
